@@ -1,12 +1,17 @@
 import Link from "next/link";
 import React from "react";
 
-const ShopData: any= {
- 
-  women: { name: 'WOMEN', Category: 'Lawn', Type: 'Stitched' },
-  man: { name: 'MAN', Category: 'washing', Type: 'Stitched' },
-  kids: { name: 'KIDS', Category: 'Ready', Type: 'Stitched' },
+interface ShopItem {
+  name: string;
+  Category: string;
+  Type: string;
 }
+
+const ShopData: Record<string, ShopItem> = {
+  women: { name: 'WOMEN', Category: 'Lawn', Type: 'Stitched' },
+  man: { name: 'MAN', Category: 'Washing', Type: 'Stitched' },
+  kids: { name: 'KIDS', Category: 'Ready', Type: 'Stitched' },
+};
 
 
 export default function ShopDetails({ params }:{params :{shop_name:string}}) {

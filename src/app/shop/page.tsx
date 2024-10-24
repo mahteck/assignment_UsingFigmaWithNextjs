@@ -1,7 +1,7 @@
 import ShopData from '../components/ShopData';
 
 export default function Shop() {
-  const Shops = ['women', 'man', 'kids','accessories'];
+  // const Shops = ['women', 'man', 'kids','accessories'];
 
   return (
     <div > 
